@@ -17,10 +17,10 @@ st.header("분류할 이미지를 업로드해주세요:")
 col1,col2 = st.columns(2)
 with col1:
     ex_image = Image.open("yoojaesuk.jpg")
-    st.image(ex_image, caption='유재석', use_column_width=True)
+    st.image(ex_image, width=100, caption='유재석(yoojaesuk)', use_column_width=True)
 with col2:
     ex_image2 = Image.open("hadoyoung.jpeg")
-    st.image(ex_image2, caption='하도영', use_column_width=True)
+    st.image(ex_image2, width=100, caption='하도영(hadoyoung)', use_column_width=True)
 
 def dog_cat_classifier(img, model):
     '''
