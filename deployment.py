@@ -73,6 +73,7 @@ if uploaded_image is not None:
     if label == 1:
         st.write("이 사진은 ",round(conf *100,2), "% 확률로 유재석입니다.")
         st.write("더 많은 정보는 아래 링크를 클릭하세요.")
-        st.write("https://namu.wiki/w/유재석")
+        st.write("한국어: https://namu.wiki/w/유재석")
+        st.write("English: https://en.wikipedia.org/wiki/Yoo_Jae-suk")
     else:
         st.write("이 사진은 ",round((1-conf)*100,2), "% 확률로 하도영입니다.")
