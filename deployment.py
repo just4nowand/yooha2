@@ -11,7 +11,8 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
-st.title("유재석/하도영 분류기")
+st.title("유재석/하도영 분류기4")
+st.header("(by MobileNetV2, 이미지 전처리)")
 st.header("분류할 이미지를 업로드해주세요:")
 
 def dog_cat_classifier(img, model):
@@ -49,7 +50,7 @@ if uploaded_image is not None:
     st.image(image, caption='업로드된 파일', use_column_width=True)
     st.write("")
     st.write("분류 중입니다. 잠시만 기다려주세요...")
-    label,conf = dog_cat_classifier(image, 'yooha.h5')
+    label,conf = dog_cat_classifier(image, 'yooha4.h5')
     ## st.write("label:",label,"conf:",conf)
     if label == 1:
         st.write("이 사진은 ",round(conf *100,2), "% 확률로 유재석입니다.")
