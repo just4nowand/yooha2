@@ -11,6 +11,17 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
+st.set_page_config(
+    page_title="yoojaesuk-hadoyoung classifier App",
+    page_icon="😃",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://github.com/just4nowand/yooha4',
+        'Report a bug': "https://github.com/just4nowand/yooha4/issues",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
 st.title("유재석/하도영 분류기4")
 st.header("(by MobileNetV2, 이미지 전처리)")
 st.header("분류할 이미지를 업로드해주세요:")
