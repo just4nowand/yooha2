@@ -14,6 +14,10 @@ from tensorflow.keras.models import Sequential
 st.title("유재석/하도영 분류기4")
 st.header("(by MobileNetV2, 이미지 전처리)")
 st.header("분류할 이미지를 업로드해주세요:")
+ex_image = Image.open("yoojaesuk.jpg")
+st.image(ex_image, caption='유재석', use_column_width=True)
+ex_image2 = Image.open("hadoyoung.jpeg")
+st.image(ex_image2, caption='하도영', use_column_width=True)
 
 def dog_cat_classifier(img, model):
     '''
