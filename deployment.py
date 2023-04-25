@@ -16,7 +16,7 @@ st.header("(by MobileNetV2, 이미지 전처리)")
 st.header("분류할 이미지를 업로드해주세요:")
 col1,col2 = st.columns(2)
 with col1:
-    ex_image = Image.open("yoojaesuk.jpg")
+    ex_image = Image.open("yoojaesuk.jpeg")
     st.image(ex_image, width=200, use_column_width='never', caption='유재석(yoojaesuk)')
 with col2:
     ex_image2 = Image.open("hadoyoung.jpeg")
