@@ -73,7 +73,13 @@ if uploaded_image is not None:
     if label == 1:
         st.write("이 사진은 ",round(conf *100,2), "% 확률로 유재석입니다.")
         st.write("더 많은 정보는 아래 링크를 클릭하세요.")
+        st.write("유재석은 놀면 뭐하니, 무한도전, 런닝맨으로 유명한 대한민국의 대표 예능인이다.")
         st.write("한국어: https://namu.wiki/w/유재석")
         st.write("English: https://en.wikipedia.org/wiki/Yoo_Jae-suk")
     else:
         st.write("이 사진은 ",round((1-conf)*100,2), "% 확률로 하도영입니다.")
+        st.write("하도영은 Nexflix 드라마 The glory에서 박연진의 남편이자 재평건설의 CEO이다.")
+        st.write("더 많은 정보는 아래 링크를 클릭하세요.")
+        st.write("한국어: https://namu.wiki/w/하도영")
+        st.write("English: https://netflix.fandom.com/wiki/Ha_Do-yeong")
+        
