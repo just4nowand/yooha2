@@ -14,8 +14,8 @@ from tensorflow.keras.models import Sequential
 st.set_page_config(
     page_title="yoojaesuk-hadoyoung classifier App",
     page_icon="😃",
-    layout="wide",
-    initial_sidebar_state="expanded",
+    layout="centered",
+    initial_sidebar_state="auto",
     menu_items={
         'Get Help': 'https://github.com/just4nowand/yooha4',
         'Report a bug': "https://github.com/just4nowand/yooha4/issues",
