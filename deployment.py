@@ -25,11 +25,11 @@ def dog_cat_classifier(img, model):
     '''
     # Load the model that was saved earlier
     model = keras.models.load_model(model)
-    '''Define the array of the right shape to feed into the keras model'''
-    data = np.ndarray(shape=(1, 96, 96, 3), dtype=np.float32)
+    '''케라스 모델에 맞는 이미지 크기를 준비하고 있습니다.'''
+    data = np.ndarray(shape=(1, 100, 100, 3), dtype=np.float32)
     image = img
     #resizing the image
-    size = (96, 96)
+    size = (100, 100)
     image = ImageOps.fit(image, size, Image.ANTIALIAS)
     #convert the image into a numpy array
     image_array = np.asarray(image)
@@ -46,7 +46,7 @@ uploaded_image = st.file_uploader("유재석 또는 하도영의 이미지를 �
 
 if uploaded_image is not None:
     image = Image.open(uploaded_image)
-    st.image(image, caption='Uploaded file', use_column_width=True)
+    st.image(image, caption='업로드된 파일', use_column_width=True)
     st.write("")
     st.write("분류 중입니다. 잠시만 기다려주세요...")
     label,conf = dog_cat_classifier(image, 'yooha.h5')
