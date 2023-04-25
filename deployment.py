@@ -31,7 +31,7 @@ def dog_cat_classifier(img, model):
     image = img
     #resizing the image
     size = (100, 100)
-    image = ImageOps.fit(image, size, Image.ANTIALIAS)
+    image = ImageOps.fit(image, size, Image.LANCZOS)
     #convert the image into a numpy array
     image_array = np.asarray(image)
     # Image processing (normalization)
