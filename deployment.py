@@ -72,5 +72,7 @@ if uploaded_image is not None:
     ## st.write("label:",label,"conf:",conf)
     if label == 1:
         st.write("이 사진은 ",round(conf *100,2), "% 확률로 유재석입니다.")
+        st.write("더 많은 정보는 아래 링크를 클릭하세요.")
+        st.write("https://namu.wiki/w/유재석")
     else:
         st.write("이 사진은 ",round((1-conf)*100,2), "% 확률로 하도영입니다.")
